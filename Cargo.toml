@@ -1,0 +1,17 @@
+[package]
+name = "pristine"
+version = "0.1.0"
+authors = ["Robin Hundt <24554122+robinhundt@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+juniper = "0.15.3"
+actix-web = "4.0.0-beta.4"
+actix-cors = {git = "https://github.com/actix/actix-extras.git"}
+sqlx = {version = "0.5", features = ["sqlite", "macros", "migrate","chrono", "runtime-actix-rustls"]}
+serde_json = "1.0.64"
+juniper_actix = "0.2.3"
+env_logger = "0.8.3"
+chrono = "0.4.19"
